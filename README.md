@@ -68,23 +68,40 @@ Il programma:
 1. Legge i criteri da `config.json`
 2. Esegue lo scraping su tutti i portali
 3. Filtra i risultati in base ai criteri
-4. Salva i risultati in un file CSV con timestamp
+4. Salva i risultati in formato CSV e Excel
 5. Mostra un riepilogo con statistiche e top 5 match
 
 ## Output
 
-Il file CSV generato conterrà:
-- **source**: Portale da cui proviene l'annuncio
-- **title**: Titolo dell'annuncio
-- **price**: Prezzo (€)
-- **area**: Superficie (m²)
-- **rooms**: Numero di camere
-- **location**: Località
-- **features**: Caratteristiche trovate (garage, giardino, etc.)
-- **url**: Link all'annuncio
-- **description**: Descrizione completa
+Lo scraper genera **2 file** per ogni esecuzione:
 
-Il file viene salvato come: `risultati_monselice_YYYYMMDD_HHMMSS.csv`
+### 📄 File CSV: `risultati_monselice_YYYYMMDD_HHMMSS.csv`
+File semplice con tutti i dati in formato testo.
+
+### 📊 File Excel: `risultati_monselice_YYYYMMDD_HHMMSS.xlsx` (CONSIGLIATO)
+File Excel formattato con:
+- ✅ **Intestazioni colorate** (blu scuro con testo bianco)
+- ✅ **Colori automatici per i prezzi**:
+  - 🟢 Verde = Prezzi bassi (primo 33% del range)
+  - 🟡 Giallo = Prezzi medi (33-66% del range)
+  - 🔴 Rosso = Prezzi alti (ultimo 33% del range)
+- ✅ **Link cliccabili** per aprire gli annunci direttamente
+- ✅ **Colonne auto-dimensionate** per leggibilità ottimale
+- ✅ **Filtri automatici** su tutte le colonne
+- ✅ **Intestazione bloccata** (rimane visibile quando scorri)
+- ✅ **Formattazione valuta** (€ con separatori delle migliaia)
+- ✅ **Bordi e allineamento** per una lettura facile
+
+### Colonne contenute:
+- **Fonte**: Portale da cui proviene l'annuncio
+- **Titolo**: Titolo dell'annuncio
+- **Prezzo (€)**: Prezzo (con colori verde/giallo/rosso)
+- **Superficie (m²)**: Metri quadri
+- **Camere**: Numero di camere
+- **Località**: Zona/Città
+- **Caratteristiche**: garage, giardino, balcone, ecc.
+- **Link**: URL cliccabile per vedere l'annuncio
+- **Descrizione**: Testo completo dell'annuncio
 
 ## Struttura del Progetto
 

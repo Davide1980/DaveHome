@@ -84,10 +84,25 @@ Salva il file e riesegui `run.bat`.
 
 ## File Generati
 
-I risultati vengono salvati in:
-- **`risultati_monselice_YYYYMMDD_HHMMSS.csv`**
+I risultati vengono salvati in **2 formati**:
 
-Puoi aprirlo con Excel o LibreOffice Calc.
+### 📄 File CSV
+- **`risultati_monselice_YYYYMMDD_HHMMSS.csv`**
+- Formato semplice, apribile con Excel o Blocco Note
+
+### 📊 File Excel (CONSIGLIATO!)
+- **`risultati_monselice_YYYYMMDD_HHMMSS.xlsx`**
+- **APRI QUESTO FILE CON EXCEL** per la migliore esperienza!
+
+**Caratteristiche del file Excel:**
+- ✅ Colori automatici sui prezzi (verde=economico, rosso=costoso)
+- ✅ Link cliccabili per aprire gli annunci
+- ✅ Filtri su tutte le colonne
+- ✅ Formattazione professionale
+- ✅ Intestazione sempre visibile mentre scorri
+- ✅ Colonne già dimensionate perfettamente
+
+**Basta fare doppio click sul file `.xlsx` per aprirlo con Excel!**
 
 ---
 

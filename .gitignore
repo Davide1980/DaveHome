@@ -27,7 +27,9 @@ ENV/
 
 # Results
 *.csv
+*.xlsx
 risultati_*.csv
+risultati_*.xlsx
 
 # IDE
 .vscode/
