@@ -1,0 +1,23 @@
+{
+  "search_criteria": {
+    "location": "Monselice",
+    "province": "Padova",
+    "price_min": 100000,
+    "price_max": 180000,
+    "property_type": "casa indipendente",
+    "area_min": 120,
+    "area_max": 220,
+    "rooms": 3,
+    "features": [
+      "garage",
+      "giardino",
+      "balcone",
+      "studio"
+    ],
+    "condition": ["nuovo", "ristrutturato", "da ristrutturare"]
+  },
+  "output": {
+    "format": "csv",
+    "filename": "risultati_monselice.csv"
+  }
+}
