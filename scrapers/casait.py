@@ -128,6 +128,7 @@ class CasaitScraper(BaseScraper):
         soup = self.fetch_page(url)
         if not soup:
             print(f"Failed to fetch {self.get_site_name()}")
+            self.close_driver()
             return []
 
         listings = []
@@ -170,4 +171,5 @@ class CasaitScraper(BaseScraper):
                         print(f"✓ Match found: {listing['title'][:50]}... - €{listing.get('price', 'N/A')}")
 
         print(f"Total matches from {self.get_site_name()}: {len(listings)}")
+        self.close_driver()
         return listings
